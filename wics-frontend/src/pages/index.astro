@@ -1,0 +1,17 @@
+---
+import Layout from '../layouts/Layout.astro';
+import App from "../layouts/App";
+---
+
+<!--
+We're going to just hydrate this here since this a small website and we don't need to worry too
+much about performance (also it saves me from having to remember to hydrate!
+
+ref:
+whatever.astro => "/whatever"
+about.astro => "/about"
+index.astro => "/"
+  -->
+<Layout>
+	<App client:load />
+</Layout>
