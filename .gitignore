@@ -4,3 +4,4 @@ build
 output
 .idea/*.xml
 *.iml
+.kotlin
