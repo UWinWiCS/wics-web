@@ -1,9 +1,11 @@
-import {Test} from "@/components/Test.tsx";
+import {Header} from "@/components/homepage/Header.tsx";
+import {Navbar} from "@/components/navbar/Navbar.tsx";
 
 function App() {
     return (
         <>
-            <Test />
+            <Navbar />
+            <Header />
         </>
     )
 }
