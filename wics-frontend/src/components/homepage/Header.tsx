@@ -14,7 +14,7 @@ export function Header() {
             <h1 className="font-madimi text-[4vw] text-center absolute top-[15%] left-1/2 -translate-x-1/2 text-[#FDA8C7] font-normal not-italic">UNIVERSITY OF WINDSOR</h1>
 
             {/*the main logo*/}
-            <div className="w-[33%] relative top-[19%] left-[33%]">
+            <div className="w-[33%] relative top-[21%] left-[33%]">
                 <img src="/src/assets/MainLogo.png" alt="Main Logo"/>
             </div>
 
