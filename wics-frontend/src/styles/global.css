@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Madimi+One&family=Marmelad&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Madimi+One&family=Magra&family=Marmelad&display=swap");
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -111,6 +111,7 @@
     --color-sidebar-ring: var(--sidebar-ring);
     --font-marmelad: "Marmelad";
     --font-madimi: "Madimi One";
+    --font-magra: "Magra";
 }
 
 @layer base {

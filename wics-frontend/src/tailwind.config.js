@@ -6,6 +6,7 @@ module.exports = {
             fontFamily: {
                 madimi: ['"Madimi One"', ...defaultTheme.fontFamily.sans],
                 marmelad: ['"Marmelad"', ...defaultTheme.fontFamily.serif],
+                magra: ['"Magra"', ...defaultTheme.fontFamily.serif],
             }
         }
     },
