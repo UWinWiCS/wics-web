@@ -11,15 +11,15 @@ function Header() {
             </div>
 
             {/*University of Windsor text*/}
-            <h1 className="font-madimi text-[4vw] flex justify-center mt-20 text-[#FDA8C7]">UNIVERSITY OF WINDSOR</h1>
+            <h1 className="font-madimi sm:text-[4vw] text-[8vw] flex justify-center mt-20 text-[#FDA8C7]">UNIVERSITY OF WINDSOR</h1>
 
             {/*the main logo*/}
             <div className="mt-0 flex justify-center ">
-                <img src="/src/assets/MainLogo.png" alt="Main Logo" className="w-1/3"/>
+                <img src="/src/assets/MainLogo.png" alt="Main Logo" className="w-80 sm:w-1/3"/>
             </div>
 
             {/*text following logo*/}
-            <h2 className="font-madimi text-[1.5vw] text-[#766A6E] flex justify-center mb-5 text-center">
+            <h2 className="font-madimi text-[4vw] sm:text-[1.5vw] text-[#FDA8C7] sm:text-[#766A6E] flex justify-center mb-5 mt-2 text-center">
                 A student-run organization dedicated to fostering a supportive community <br/>
                 for women in Computer Science at UWindsor
             </h2>
