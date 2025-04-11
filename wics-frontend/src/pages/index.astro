@@ -1,17 +1,14 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import App from "../layouts/App";
+import Footer from "@/components/footer/Footer";
+import Layout from "@/layouts/Layout.astro";
+import About from "@/components/homepage/About";
+import Header from "@/components/homepage/Header";
+import Navbar from "@/components/navbar/Navbar";
 ---
 
-<!--
-We're going to just hydrate this here since this a small website and we don't need to worry too
-much about performance (also it saves me from having to remember to hydrate!
-
-ref:
-whatever.astro => "/whatever"
-about.astro => "/about"
-index.astro => "/"
-  -->
 <Layout>
-	<App client:load />
+  <Navbar client:load />
+  <Header client:load />
+  <About client:load />
+  <Footer client:load />
 </Layout>

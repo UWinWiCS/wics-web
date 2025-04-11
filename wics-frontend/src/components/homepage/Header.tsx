@@ -1,4 +1,4 @@
-export function Header() {
+function Header() {
     return (
         <section className="h-[100vh] bg-[#FDEAF3] relative overflow-hidden">
 
@@ -11,15 +11,15 @@ export function Header() {
             </div>
 
             {/*University of Windsor text*/}
-            <h1 className="font-madimi text-[4vw] text-center absolute top-[15%] left-1/2 -translate-x-1/2 text-[#FDA8C7] font-normal not-italic">UNIVERSITY OF WINDSOR</h1>
+            <h1 className="font-madimi text-[4vw] flex justify-center mt-25 text-[#FDA8C7]">UNIVERSITY OF WINDSOR</h1>
 
             {/*the main logo*/}
-            <div className="w-[33%] relative top-[21%] left-[33%]">
-                <img src="/src/assets/MainLogo.png" alt="Main Logo"/>
+            <div className="mt-0 flex justify-center ">
+                <img src="/src/assets/MainLogo.png" alt="Main Logo" className="w-1/3"/>
             </div>
 
             {/*text following logo*/}
-            <h2 className="font-madimi text-[1.5vw] text-[#766A6E] absolute top-[82%] left-1/2 transform -translate-x-1/2 text-center">
+            <h2 className="font-madimi text-[1.5vw] text-[#766A6E] flex justify-center mb-3 text-center">
                 A student-run organization dedicated to fostering a supportive community <br/>
                 for women in Computer Science at UWindsor
             </h2>
@@ -27,3 +27,4 @@ export function Header() {
         </section>
     );
 }
+export default Header;

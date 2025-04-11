@@ -1,4 +1,6 @@
-export function Navbar() {
+import About from "@/components/homepage/About.tsx";
+
+function Navbar() {
     return (
         <div className="w-[100vw] h-[10%] fixed top-0 left-0 z-10">
 
@@ -10,3 +12,4 @@ export function Navbar() {
         </div>
     );
 }
+export default Navbar;
