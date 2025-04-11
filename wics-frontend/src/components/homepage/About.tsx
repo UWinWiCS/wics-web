@@ -4,20 +4,20 @@ import { faCoffee, faUsers, faCode } from '@fortawesome/free-solid-svg-icons'
 function About() {
     return (
 
-        <section className="h-[75vh] bg-[#FFF3F8] relative overflow-hidden">
+        <section className="py-10 bg-[#FFF3F8] relative overflow-hidden">
 
             {/*about us text*/}
             <div className="justify-center text-center mt-5 font-madimi">
-                <h1 className="text-[4vw] flex justify-center text-[#FDA8C7]">ABOUT WiCS</h1>
-                <p className="text-[1.5vw] mt-8 text-[#766A6E]">
+                <h1 className="lg:text-[4vw] text-[10vw] flex justify-center text-[#FDA8C7]">ABOUT WiCS</h1>
+                <p className="hidden sm:block lg:text-[1.5vw] mt-8 text-[#766A6E]">
                     Empowering women in Computer Science by fostering community,
                     mentorship, and growth opportunities.
                 </p>
             </div>
 
             {/*cards*/}
-            <div className="flex flex-wrap justify-center mt-10 items-stretch gap-10 h-80 mx-auto px-4">
-                <Card
+            <div className="flex flex-wrap justify-center gap-10 items-stretch px-4 sm:px-10 mt-10">
+            <Card
                     icon={faCoffee}
                     title="Friendly Community"
                     description="A safe space to discuss challenges, share successes, and grow!"

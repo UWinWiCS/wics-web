@@ -11,7 +11,7 @@ export interface CircularIconProps {
     color?: string;
 }
 
-export const CircularIcon = ({ icon, parentClassName, className, size = "w-[20%] h-[20%]", color = "text-[#ffd0e2]" }: CircularIconProps) => {
+export const CircularIcon = ({ icon, parentClassName, className, size = "w-16 h-16", color = "text-[#ffd0e2]" }: CircularIconProps) => {
     return (
         <div className={cn("bg-amber-50 rounded-full flex justify-center items-center", size, parentClassName)}>
             <FontAwesomeIcon icon={icon} className={cn("justify-self-center text-xl", color, className)}/>
