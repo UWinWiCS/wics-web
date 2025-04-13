@@ -1,15 +1,30 @@
-import About from "@/components/homepage/About.tsx";
-
 function Navbar() {
     return (
-        <div className="w-[100vw] h-[10%] fixed top-0 left-0 z-10">
+        <nav className="w-full fixed top-0 left-0 z-10 px-8 py-4">
+            <div className="mx-auto flex items-center justify-between">
 
-            <div className="absolute top-[-50%] left-[-1%] w-[10%]">
-                <img src="/src/assets/NavBarLogo.png" alt="Navbar Logo"/>
+                {/* Logo */}
+                <div className="flex items-center">
+                    <img src="/src/assets/NavBarLogo.png" alt="Navbar Logo" className=" absolute -ml-10 h-43 w-auto" />
+                </div>
+
+                {/* Nav Links */}
+                <div className="flex items-center space-x-8 font-marmelad text-[#766A6E] font-medium text-[1.375rem]">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#highlights">Highlights</a>
+                    <a href="#events">Events</a>
+                    <a href="#store">Store</a>
+                    <a
+                        href="#discord"
+                        className="bg-[#FDA8C7] text-white px-5 py-1 rounded-xl hover:bg-[#f28db4] transition"
+                    >
+                        Discord
+                    </a>
+                </div>
             </div>
-
-            <h1 className="font-Marmalad text-[1.5vw] text-center absolute top-[15%] left-1/2 -translate-x-1/2 text-[#FDA8C7]">UNIVERSITY OF WINDSOR</h1>
-        </div>
+        </nav>
     );
 }
+
 export default Navbar;

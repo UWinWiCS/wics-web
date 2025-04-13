@@ -3,7 +3,7 @@ function Mission() {
 
     return (
         <section className="py-12 bg-[#ffe2ef] flex justify-center overflow-hidden">
-            <div className="bg-[#FFF2F8] flex justify-center w-3/4 rounded-lg">
+            <div className="bg-[#FFF2F8] flex justify-center w-3/4 rounded-lg transition-transform duration-300 ease-in-out hover:scale-105">
                 <div className="pr-5 sm:w-2/3 text-left">
 
                     <h2 className="text-5xl pt-5 pl-5 font-madimi text-[#FDA8C7] mb-4">Our Mission</h2>
