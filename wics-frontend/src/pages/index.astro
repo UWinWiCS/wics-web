@@ -4,11 +4,13 @@ import Layout from "@/layouts/Layout.astro";
 import About from "@/components/homepage/About";
 import Header from "@/components/homepage/Header";
 import Navbar from "@/components/navbar/Navbar";
+import Mission from "@/components/homepage/Mission"
 ---
 
 <Layout>
   <Navbar client:load />
   <Header client:load />
   <About client:load />
+  <Mission client:load/>
   <Footer client:load />
 </Layout>

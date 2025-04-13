@@ -4,7 +4,7 @@ import { faCoffee, faUsers, faCode } from '@fortawesome/free-solid-svg-icons'
 function About() {
     return (
 
-        <section className="py-10 bg-[#FFF3F8] relative overflow-hidden">
+        <section className="py-10 bg-gradient-to-b from-[#FFF3F8] to-[#ffedf4] relative overflow-hidden">
 
             {/*about us text*/}
             <div className="justify-center text-center mt-5 font-madimi">
@@ -37,6 +37,7 @@ function About() {
                 />
             </div>
         </section>
+
     );
 }
 
