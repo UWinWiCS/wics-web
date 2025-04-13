@@ -19,7 +19,7 @@ function Header() {
             </div>
 
             {/*text following logo*/}
-            <h2 className="font-madimi text-[4vw] sm:text-[1.5vw] pt-5 pb-10 text-[#FDA8C7] sm:text-[#766A6E] flex justify-center mb-5 mt-2 text-center">
+            <h2 className="font-madimi text-[4vw] sm:text-[1.5vw] pt-5 pb-10 text-[#ce97a7] sm:text-[#766A6E] flex justify-center mb-5 mt-2 text-center">
                 A student-run organization dedicated to fostering a supportive community <br/>
                 for women in Computer Science at UWindsor
             </h2>
