@@ -17,22 +17,26 @@ export function Event({ icon, title, date, time, location, description, classNam
         <div className={cn(
             "bg-[#FDE4EE] rounded-[20px] shadow-lg p-6 flex flex-col justify-between " +
             "transition-transform duration-300 ease-in-out hover:scale-105 " +
-            "w-full sm:w-[45%] md:w-[40%] max-w-[650px] min-h-[300px]",
+            "w-full sm:w-[45%] md:w-[40%] max-w-[650px] min-h-[300px] p-[30px]",
             className
         )}>
-            <CircularIcon icon={icon} />
-            <div className="flex flex-col mt-8 font-madimi h-full">
-                <h1 className="text-3xl text-[#FDA8C7] font-bold">{title}</h1>
-                <p className="text-md text-2xl text-[#CA91A4] mt-4 font-magra">
-                    {date}
-                </p>
-                <p className="text-md text-2xl text-[#CA91A4] mt-4 font-magra">
-                    {time}
-                </p>
-                <p className="text-md text-2xl text-[#CA91A4] mt-4 font-magra">
-                    {location}
-                </p>
-                <p className="text-md text-2xl text-[#CA91A4] mt-4 font-magra">
+            <div className="flex gap-4">
+                <CircularIcon icon={icon} />
+                <div className="flex flex-col flex-1 ">
+                    <h1 className="text-3xl text-[#FDA8C7] font-bold text-right font-madimi">{title}</h1>
+                    <p className="text-md text-2xl text-[#CA91A4] mt-4 font-magra text-right">
+                        {date}
+                    </p>
+                    <p className="text-md text-2xl text-[#CA91A4] mt-4 font-magra text-right">
+                        {time}
+                    </p>
+                    <p className="text-md text-2xl text-[#CA91A4] mt-4 font-magra text-right">
+                        {location}
+                    </p>
+                </div>
+            </div>
+            <div className="mt-8">
+                <p className="text-md text-2xl text-[#CA91A4] font-magra">
                     {description}
                 </p>
             </div>
