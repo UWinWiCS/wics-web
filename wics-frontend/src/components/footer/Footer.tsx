@@ -1,11 +1,8 @@
 import {Menu, X} from "lucide-react";
+import {CircularIcon} from "@/components/ui/CircularIcon.tsx";
+import {faInstagram} from "@fortawesome/free-brands-svg-icons";
 
 function Footer() {
-
-   // return (
-       // <footer className="bg-[#ffffff] h-[15vh] flex flex-col sm:flex-row justify-center gap-5 sm:gap-0">
-       // </footer>
-    //);
 
     // I started with the code from Navbar as a "base" to build the footer. - Nonika
     // Navbar.tsx also has the code for the collapsing links/hamburger menu.
@@ -24,9 +21,9 @@ function Footer() {
 
                 {/* Nav Links */}
                 <div className="hidden md:flex space-x-8 font-marmelad text-[#766A6E] font-medium text-[1.375rem] items-center">
-                    <a href="#home">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#highlights">Highlights</a>
+                    <a href="https://www.instagram.com/uwin.wics/">
+                        <CircularIcon icon={faInstagram} is3xl={true} />
+                    </a>
                     <a href="#events">Events</a>
                     <a href="#store">Store</a>
                     <a
