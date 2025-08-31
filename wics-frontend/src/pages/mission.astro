@@ -1,18 +1,14 @@
 ---
-import Footer from "@/components/footer/Footer";
-import Layout from "@/layouts/Layout.astro";
-import About from "@/components/homepage/About";
+import Layout from "../layouts/Layout.astro";
 import Header from "@/components/homepage/Header";
 import Navbar from "@/components/navbar/Navbar";
 import Mission from "@/components/homepage/Mission";
-import Events from "@/components/events/Events"
+import Footer from "@/components/footer/Footer";
 ---
 
 <Layout>
     <Navbar client:load />
     <Header client:load />
-    <About client:load />
     <Mission client:load/>
-    <Events client:load />
     <Footer client:load />
 </Layout>

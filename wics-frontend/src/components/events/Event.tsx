@@ -1,7 +1,6 @@
 import { type IconDefinition } from '@fortawesome/free-solid-svg-icons'
-import { CircularIcon } from '@/components/ui/CircularIcon';
-import { cn } from '@/lib/utils';
-import {img} from "framer-motion/m";
+import { CircularIcon } from '@/components/ui/CircularIcon.tsx';
+import { cn } from '@/lib/utils.ts';
 
 export interface CardProps {
     icon: IconDefinition;

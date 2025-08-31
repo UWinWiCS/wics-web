@@ -1,5 +1,5 @@
 import {faCoffee, faPaintbrush} from "@fortawesome/free-solid-svg-icons";
-import {Event} from "@/components/ui/Event";
+import {Event} from "@/components/events/Event.tsx";
 
 function Events() {
     return (
