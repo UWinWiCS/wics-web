@@ -1,3 +1,7 @@
+import {Menu, X} from "lucide-react";
+import {CircularIcon} from "@/components/ui/CircularIcon.tsx";
+import {faInstagram} from "@fortawesome/free-brands-svg-icons";
+
 function Footer() {
     return (
         <footer className="bg-[#ffe2ef] flex flex-col justify-start items-center p-6 min-h-[20vh] relative">
