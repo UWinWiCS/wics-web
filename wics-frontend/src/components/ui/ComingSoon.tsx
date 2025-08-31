@@ -2,7 +2,7 @@
 function ComingSoon() {
 
     return (
-        <section id="comingsoon" className="py-12 bg-[#ffe2ef] scroll-mt-60 flex justify-center overflow-hidden">
+        <section id="comingsoon" className="py-90 bg-[#ffe2ef] scroll-mt-60 flex justify-center overflow-hidden">
             <div className="bg-[#FFF2F8] flex justify-center w-3/4 rounded-lg transition-transform duration-300 ease-in-out hover:scale-105">
                 <div className="pr-5 sm:w-2/3 text-center">
 
