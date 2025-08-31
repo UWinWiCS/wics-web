@@ -42,7 +42,7 @@ function Navbar() {
                 <div className="hidden md:flex space-x-8 font-marmelad text-[#766A6E] font-medium text-[1.375rem] items-center">
                     <a href="#home">Home</a>
                     <a href="#about">About</a>
-                    <a href="#highlights">Highlights</a>
+                    <a href="#mission">Mission</a>
                     <a href="#events">Events</a>
                     <a href="#store">Store</a>
                     <a

@@ -1,11 +1,10 @@
-import {Card} from "@/components/ui/Card.tsx";
-import {faCode, faCoffee, faPaintbrush} from "@fortawesome/free-solid-svg-icons";
-import {Event} from "@/components/ui/Event.tsx";
+import {faCoffee, faPaintbrush} from "@fortawesome/free-solid-svg-icons";
+import {Event} from "@/components/ui/Event";
 
 function Events() {
     return (
 
-        <section className="py-10 bg-[#FFF3F8] relative overflow-hidden">
+        <section id="events" className="py-10 scroll-mt-20 bg-[#FFF3F8] relative overflow-hidden">
             {/*Events title*/}
             <div className="justify-center text-center mt-5 font-madimi">
                 <h1 className="lg:text-[4vw] text-[10vw] flex justify-center text-[#FDA8C7]">Recent Events</h1>
@@ -31,6 +30,12 @@ function Events() {
                     description="Join us for more fun events!"
                     className=""
                 />
+            </div>
+
+            <div className="flex justify-center mt-10">
+                <button className="px-6 py-3 bg-[#FDA8C7] hover:bg-[#f98db4] text-white font-semibold rounded-sm shadow-md transition duration-300">
+                    View All Events
+                </button>
             </div>
         </section>
     );

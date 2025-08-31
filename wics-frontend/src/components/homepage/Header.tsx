@@ -1,6 +1,6 @@
 function Header() {
     return (
-        <section className="py-1 bg-[#FDEAF3] relative overflow-hidden">
+        <section id="home" className="py-1 bg-[#FDEAF3] relative overflow-hidden">
 
             {/*shading components for the BG (Makes slightly pinker)*/}
             <div className="absolute bottom-0 right-0 w-[50%]">
@@ -9,6 +9,13 @@ function Header() {
             <div className="absolute top-0 left-0 w-[50%]">
                 <img src="/src/assets/HeaderTLShading.png" alt="Left Shading"/>
             </div>
+
+            {/* Full-screen Circuit background */}
+            <img
+                src="/src/assets/Circuit.png"
+                alt="Circuit Background"
+                className="absolute inset-0 w-full h-full object-cover opacity-40 -translate-y-0 z-0"
+            />
 
             {/*University of Windsor text*/}
             <h1 className="font-madimi sm:text-[4vw] text-[8vw] flex justify-center mt-20 text-[#FDA8C7]">UNIVERSITY OF WINDSOR</h1>
