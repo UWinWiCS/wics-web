@@ -1,6 +1,7 @@
 import { type IconDefinition } from '@fortawesome/free-solid-svg-icons'
 import { CircularIcon } from '@/components/ui/CircularIcon';
 import { cn } from '@/lib/utils';
+import {img} from "framer-motion/m";
 
 export interface CardProps {
     icon: IconDefinition;
@@ -10,9 +11,11 @@ export interface CardProps {
     location: string;
     description: string;
     className?: string;
+    imgSrc?: string; // optional image URL (imported in Events.tsx)
+    imgAlt?: string; // optional alt text
 }
 
-export function Event({ icon, title, date, time, location, description, className } : CardProps) {
+export function Event({ icon, title, date, time, location, description, className, imgSrc, imgAlt } : CardProps) {
     return (
         <div className={cn(
             "bg-[#FDE4EE] rounded-[20px] shadow-lg p-6 flex flex-col justify-between " +
@@ -21,9 +24,19 @@ export function Event({ icon, title, date, time, location, description, classNam
             className
         )}>
             <div className="flex gap-4">
-                <CircularIcon icon={icon} />
+
+                {imgSrc ? (
+                    <img
+                        src={imgSrc}
+                        alt={imgAlt ?? `${title} poster`}
+                        className="mt-4 max-h-60 object-contain self-end rounded hidden xl:block"
+                    />
+                ) : (
+                    <CircularIcon icon={icon} />
+                )}
+                <div className="xl:hidden"><CircularIcon icon={icon} /></div>
                 <div className="flex flex-col flex-1 ">
-                    <h1 className="text-3xl text-[#FDA8C7] font-bold text-right font-madimi">{title}</h1>
+                    <h1 className="text-3xl text-[#FDA8C7] font-bold text-right font-madimi pt-[30px]">{title}</h1>
                     <p className="text-md text-2xl text-[#CA91A4] mt-4 font-magra text-right">
                         {date}
                     </p>

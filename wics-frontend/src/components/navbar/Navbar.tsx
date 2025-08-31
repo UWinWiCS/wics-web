@@ -40,11 +40,11 @@ function Navbar() {
 
                 {/* Nav Links */}
                 <div className="hidden md:flex space-x-8 font-marmelad text-[#766A6E] font-medium text-[1.375rem] items-center">
-                    <a href="#home">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#mission">Mission</a>
-                    <a href="#events">Events</a>
-                    <a href="#store">Store</a>
+                    <a href="/">Home</a>
+                    <a href="/about">About</a>
+                    <a href="/mission">Mission</a>
+                    <a href="/events">Events</a>
+                    <a href="/store">Store</a>
                     <a
                         href="#discord"
                         className="bg-[#FDA8C7] text-white px-5 py-1 rounded-xl hover:bg-[#f28db4] transition"
@@ -52,15 +52,14 @@ function Navbar() {
                         Discord
                     </a>
                 </div>
-
                 {/* Mobile dropdown */}
                 {isOpen && (
                     <div className="absolute top-full left-0 w-full flex flex-col items-center bg-white/80 backdrop-blur-md py-4 md:hidden font-marmelad text-[#766A6E] font-medium text-[1.375rem] space-y-4 z-20 rounded-lg">
-                        <a href="#home" onClick={() => setIsOpen(false)}>Home</a>
-                        <a href="#about" onClick={() => setIsOpen(false)}>About</a>
-                        <a href="#highlights" onClick={() => setIsOpen(false)}>Highlights</a>
-                        <a href="#events" onClick={() => setIsOpen(false)}>Events</a>
-                        <a href="#store" onClick={() => setIsOpen(false)}>Store</a>
+                        <a href="/" onClick={() => setIsOpen(false)}>Home</a>
+                        <a href="/about" onClick={() => setIsOpen(false)}>About</a>
+                        <a href="/mission" onClick={() => setIsOpen(false)}>Mission</a>
+                        <a href="/events" onClick={() => setIsOpen(false)}>Events</a>
+                        <a href="/store" onClick={() => setIsOpen(false)}>Store</a>
                         <a
                             href="#discord"
                             className="bg-[#FDA8C7] text-white px-5 py-1 rounded-xl hover:bg-[#f28db4] transition"
