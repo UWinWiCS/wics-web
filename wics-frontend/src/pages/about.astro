@@ -2,9 +2,11 @@
 import Layout from "../layouts/Layout.astro";
 import Header from "@/components/homepage/Header";
 import Navbar from "@/components/navbar/Navbar";
+import Footer from "@/components/footer/Footer";
 ---
 
 <Layout>
-  <Navbar client:load />
-  <Header client:load />
+    <Navbar client:load />
+    <Header client:load />
+    <Footer client:load />
 </Layout>
