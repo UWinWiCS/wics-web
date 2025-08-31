@@ -3,12 +3,14 @@ import Footer from "@/components/footer/Footer";
 import Layout from "@/layouts/Layout.astro";
 import Header from "@/components/homepage/Header";
 import Navbar from "@/components/navbar/Navbar";
+import ComingSoon from "@/components/ui/ComingSoon";
 import Events from "@/components/events/Events";
 ---
 
 <Layout>
-  <Navbar client:load />
-  <Header client:load />
-  <Events client:load />
-  <Footer client:load />
+    <Navbar client:load />
+    <Header client:load />
+    <Events client:load />
+    <ComingSoon client:load />
+    <Footer client:load />
 </Layout>
