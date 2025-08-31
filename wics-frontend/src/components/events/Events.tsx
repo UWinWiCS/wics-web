@@ -20,7 +20,7 @@ function Events() {
                     location="Reaume Park"
                     description="Join the WiCS club for some outdoor summer fun, including: free snacks + drinks, board games and activities, and mingle with club members!"
                     className=""
-                    imgSrc="/src/assets/images/picnic.png"
+                    imgSrc="/src/assets/images/picnic_stock.png"
                     imgAlt="Summer Picnic selfie"
                 />
                 <Event
