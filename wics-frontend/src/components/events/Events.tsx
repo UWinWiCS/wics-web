@@ -1,5 +1,7 @@
 import {faCoffee, faPaintbrush} from "@fortawesome/free-solid-svg-icons";
 import {Event} from "@/components/events/Event.tsx";
+import picnicImage from '../../assets/images/picnic.png';
+import craftsNightImage from '../../assets/images/crafts_night.png';
 
 function Events() {
     return (
@@ -20,7 +22,7 @@ function Events() {
                     location="Reaume Park"
                     description="Join the WiCS club for some outdoor summer fun, including: free snacks + drinks, board games and activities, and mingle with club members!"
                     className=""
-                    imgSrc="/src/assets/images/picnic_stock.png"
+                    imgSrc={picnicImage.src}
                     imgAlt="Summer Picnic selfie"
                 />
                 <Event
@@ -31,7 +33,7 @@ function Events() {
                     location="Erie Hall 1115"
                     description="Join the WiCS club for some beginner friendly arts-n-crafts! Supplies will be available for crochet, origami, and colouring! Free snacks and drinks provided!"
                     className=""
-                    imgSrc="/src/assets/images/crafts_night.png"
+                    imgSrc={craftsNightImage.src}
                     imgAlt="Crafts Night stock image"
                 />
             </div>

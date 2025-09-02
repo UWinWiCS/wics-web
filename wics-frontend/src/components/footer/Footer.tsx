@@ -1,9 +1,16 @@
+import navBarLogo from '../../assets/NavBarLogo.png';
+import discordBtn from '../../assets/DiscordBtn.png';
+import githubBtn from '../../assets/GIthubBtn.png';
+import picturesBtn from '../../assets/PicturesBtn.png';
+import mailBtn from '../../assets/MailBtn.png';
+import codeButton from '../../assets/CodeButton.png';
+
 function Footer() {
     return (
         <footer className="bg-[#ffe2ef] flex flex-col justify-start items-center p-6 min-h-[20vh] relative">
             <div className="w-full flex justify-between items-start">
                 <img
-                    src="/src/assets/NavBarLogo.png"
+                    src={navBarLogo.src}
                     alt="Navbar Logo"
                     className="h-50 w-auto ml-[-2rem] mt-[-4rem]"
                 />
@@ -15,7 +22,7 @@ function Footer() {
                         rel="noopener noreferrer"
                     >
                         <img
-                            src="/src/assets/DiscordBtn.png"
+                            src={discordBtn.src}
                             alt="Discord"
                             className="h-14 w-14 hover:scale-110 transition-transform duration-200"
                         />
@@ -26,21 +33,21 @@ function Footer() {
                         rel="noopener noreferrer"
                     >
                         <img
-                            src="/src/assets/GithubBtn.png"
+                            src={githubBtn.src}
                             alt="Github"
                             className="h-14 w-14 hover:scale-110 transition-transform duration-200"
                         />
                     </a>
                     <a href="/pictures">
                         <img
-                            src="/src/assets/PicturesBtn.png"
+                            src={picturesBtn.src}
                             alt="Pictures"
                             className="h-14 w-14 hover:scale-110 transition-transform duration-200"
                         />
                     </a>
                     <a href="mailto:yourmail@uwindsor.ca">
                         <img
-                            src="/src/assets/MailBtn.png"
+                            src={mailBtn.src}
                             alt="Mail"
                             className="h-14 w-14 hover:scale-110 transition-transform duration-200"
                         />
@@ -55,7 +62,7 @@ function Footer() {
             </p>
 
             <img
-                src="/src/assets/CodeButton.png"
+                src={codeButton.src}
                 alt="Code Button"
                 className="absolute bottom-6 right-6 h-14 w-14 cursor-pointer hover:scale-110 transition-transform duration-200"
             />
