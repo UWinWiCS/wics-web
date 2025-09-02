@@ -47,11 +47,14 @@ function Navbar() {
                     <a href="/events">Events</a>
                     <a href="/store">Store</a>
                     <a
-                        href="#discord"
+                        href="https://discord.gg/eMMbzfKxJc"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="bg-[#FDA8C7] text-white px-5 py-1 rounded-xl hover:bg-[#f28db4] transition"
                     >
                         Discord
                     </a>
+
                 </div>
                 {/* Mobile dropdown */}
                 {isOpen && (
@@ -62,12 +65,15 @@ function Navbar() {
                         <a href="/events" onClick={() => setIsOpen(false)}>Events</a>
                         <a href="/store" onClick={() => setIsOpen(false)}>Store</a>
                         <a
-                            href="#discord"
+                            href="https://discord.gg/eMMbzfKxJc"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="bg-[#FDA8C7] text-white px-5 py-1 rounded-xl hover:bg-[#f28db4] transition"
                             onClick={() => setIsOpen(false)}
                         >
                             Discord
                         </a>
+
                     </div>
                 )}
             </div>
