@@ -7,6 +7,8 @@ import react from '@astrojs/react';
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://UWinWiCS.github.io',
+  base: '/wics-web',
   vite: {
     plugins: [tailwindcss()]
   },
