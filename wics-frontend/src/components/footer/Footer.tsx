@@ -17,7 +17,7 @@ function Footer() {
 
                 <div className="flex gap-6">
                     <a
-                        href="https://discord.gg/your-link"
+                        href="https://discord.gg/eMMbzfKxJc"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
