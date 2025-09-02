@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import navBarLogo from '../../assets/NavBarLogo.png';
 
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -25,7 +26,7 @@ function Navbar() {
                 {/* Logo */}
                 <div className="flex items-center scale-300">
                     <img
-                        src="/src/assets/NavBarLogo.png"
+                        src={navBarLogo.src}
                         alt="Navbar Logo"
                         className="h-12 w-auto"
                     />
