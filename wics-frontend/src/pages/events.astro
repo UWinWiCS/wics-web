@@ -5,10 +5,12 @@ import Header from "@/components/homepage/Header";
 import Navbar from "@/components/navbar/Navbar";
 import ComingSoon from "@/components/ui/ComingSoon";
 import Events from "@/components/events/Events";
+import Upcoming from "@/components/events/Upcoming";
 ---
 
 <Layout>
-  <Navbar client:load />
-  <Events client:load />
-  <Footer client:load />
+    <Navbar client:load />
+    <Upcoming client:load />
+    <Events client:load />
+    <Footer client:load />
 </Layout>
