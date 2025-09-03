@@ -1,8 +1,5 @@
 import {faCoffee, faPaintbrush, faCircleInfo, faCookieBite} from "@fortawesome/free-solid-svg-icons";
 import {Event} from "@/components/events/Event.tsx";
-import picnicImage from '../../assets/images/picnic.png';
-import craftsNightImage from '../../assets/images/crafts_night.png';
-import info from '../../assets/info.png';
 
 function Upcoming() {
     return (
