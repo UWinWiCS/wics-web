@@ -37,14 +37,6 @@ function Events() {
                     imgAlt="Crafts Night stock image"
                 />
             </div>
-
-            <div className="flex justify-center mt-10">
-                <a href="/events" aria-label="View all events">
-                    <button className="px-6 py-3 bg-[#FDA8C7] hover:bg-[#f98db4] text-white font-semibold rounded-sm shadow-md transition duration-300">
-                        View All Events
-                    </button>
-                </a>
-            </div>
         </section>
     );
 }

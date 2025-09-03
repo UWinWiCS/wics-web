@@ -7,7 +7,7 @@ import codeButton from '../../assets/CodeButton.png';
 
 function Footer() {
     return (
-        <footer className="bg-[#ffe2ef] flex flex-col justify-start items-center p-6 min-h-[20vh] relative">
+        <footer className="mt-10 bg-[#ffe2ef] flex flex-col justify-start items-center p-6 min-h-[20vh] relative">
             <div className="w-full flex justify-between items-start">
                 <img
                     src={navBarLogo.src}
