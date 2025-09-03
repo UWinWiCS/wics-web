@@ -1,5 +1,5 @@
 import { type IconDefinition } from '@fortawesome/free-solid-svg-icons'
-import { CircularIcon } from '@/components/ui/CircularIcon.tsx';
+import { TransparentIcon } from '@/components/ui/TransparentIcon.tsx';
 import { cn } from '@/lib/utils.ts';
 
 export interface CardProps {
@@ -26,17 +26,18 @@ export function Event({ icon, title, date, time, location, description, classNam
             <div className="flex gap-4">
 
                 {imgSrc ? (
+                    <div>
+                    <div className="xl:hidden"><TransparentIcon icon={icon} /></div>
                     <img
                         src={imgSrc}
                         alt={imgAlt ?? `${title} poster`}
                         className="mt-4 max-h-60 object-contain self-end rounded hidden xl:block"
                     />
-                ) : (
-                    <div className="text-8xl">
-                        <CircularIcon icon={icon} />
                     </div>
+                ) : (
+                        <TransparentIcon icon={icon} className="text-8xl pt-20 pl-20"/>
                 )}
-                <div className="xl:hidden"><CircularIcon icon={icon} /></div>
+
 
                 <div className="flex flex-col flex-1 ">
 

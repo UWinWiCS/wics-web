@@ -1,4 +1,4 @@
-import {faCoffee, faPaintbrush, faCircleInfo} from "@fortawesome/free-solid-svg-icons";
+import {faCoffee, faPaintbrush, faCircleInfo, faCookieBite} from "@fortawesome/free-solid-svg-icons";
 import {Event} from "@/components/events/Event.tsx";
 import picnicImage from '../../assets/images/picnic.png';
 import craftsNightImage from '../../assets/images/crafts_night.png';
@@ -25,7 +25,7 @@ function Upcoming() {
                     className=""
                 />
                 <Event
-                    icon={faPaintbrush}
+                    icon={faCircleInfo}
                     title="Tips & Tricks: Upper Year Q&A"
                     date="September 5th, 2025"
                     time="2:00 - 4:00 PM"
@@ -34,12 +34,21 @@ function Upcoming() {
                     className=""
                 />
                 <Event
-                    icon={faPaintbrush}
-                    title="Tips & Tricks: Upper Year Q&A"
-                    date="September 5th, 2025"
-                    time="2:00 - 4:00 PM"
+                    icon={faCookieBite}
+                    title="Bits & Bytes: Bake Sale"
+                    date="September 9th, 2025"
+                    time="12:00 - 2:00 PM"
+                    location="CAW"
+                    description="Support our club and fund future events by getting yourself a little treat! Our talented team also made some cute crochet items!"
+                    className=""
+                />
+                <Event
+                    icon={faCookieBite}
+                    title="Mingle & Munch: Welcome Party"
+                    date="September 9th, 2025"
+                    time="5:30 - 7:30 PM"
                     location="Erie Hall (Room TBD)"
-                    description="Want a head start to help you plan your university career? Or maybe just some tips to help you transition into uni life? Come chat with the upper year WiCS!"
+                    description="Celebrate the start of the year with us! Free snacks and drinks will be provided, just bring your awesome self and make some new friends!"
                     className=""
                 />
             </div>
