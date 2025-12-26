@@ -1,3 +1,4 @@
+import smallerLogo from '../../assets/smallerLogo.png';
 
 function Mission() {
 
@@ -17,7 +18,7 @@ function Mission() {
                 </div>
 
                 <div className="w-0 sm:w-1/3 flex justify-end">
-                    <img src="/src/assets/smallerLogo.png" alt="Mission Image" className="w-83 pr-5 h-auto rounded-lg hidden sm:block" />
+                    <img src={smallerLogo.src} alt="Mission Image" className="w-83 pr-5 h-auto rounded-lg hidden sm:block" />
                 </div>
 
             </div>

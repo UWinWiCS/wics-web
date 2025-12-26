@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import navBarLogo from '../../assets/NavBarLogo.png';
 
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -25,7 +26,7 @@ function Navbar() {
                 {/* Logo */}
                 <div className="flex items-center scale-300">
                     <img
-                        src="/src/assets/NavBarLogo.png"
+                        src={navBarLogo.src}
                         alt="Navbar Logo"
                         className="h-12 w-auto"
                     />
@@ -41,32 +42,38 @@ function Navbar() {
                 {/* Nav Links */}
                 <div className="hidden md:flex space-x-8 font-marmelad text-[#766A6E] font-medium text-[1.375rem] items-center">
                     <a href="/">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#mission">Mission</a>
+                    <a href="/#about">About</a>
+                    <a href="/#mission">Mission</a>
                     <a href="/events">Events</a>
                     <a href="/store">Store</a>
                     <a
-                        href="#discord"
+                        href="https://discord.gg/eMMbzfKxJc"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="bg-[#FDA8C7] text-white px-5 py-1 rounded-xl hover:bg-[#f28db4] transition"
                     >
                         Discord
                     </a>
+
                 </div>
                 {/* Mobile dropdown */}
                 {isOpen && (
                     <div className="absolute top-full left-0 w-full flex flex-col items-center bg-white/80 backdrop-blur-md py-4 md:hidden font-marmelad text-[#766A6E] font-medium text-[1.375rem] space-y-4 z-20 rounded-lg">
                         <a href="/" onClick={() => setIsOpen(false)}>Home</a>
-                        <a href="/about" onClick={() => setIsOpen(false)}>About</a>
-                        <a href="/mission" onClick={() => setIsOpen(false)}>Mission</a>
+                        <a href="/#about" onClick={() => setIsOpen(false)}>About</a>
+                        <a href="/#mission" onClick={() => setIsOpen(false)}>Mission</a>
                         <a href="/events" onClick={() => setIsOpen(false)}>Events</a>
                         <a href="/store" onClick={() => setIsOpen(false)}>Store</a>
                         <a
-                            href="#discord"
+                            href="https://discord.gg/eMMbzfKxJc"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="bg-[#FDA8C7] text-white px-5 py-1 rounded-xl hover:bg-[#f28db4] transition"
                             onClick={() => setIsOpen(false)}
                         >
                             Discord
                         </a>
+
                     </div>
                 )}
             </div>
