@@ -1,7 +1,7 @@
 import {faCoffee, faPaintbrush, faCircleInfo, faCookieBite} from "@fortawesome/free-solid-svg-icons";
 import {Event} from "@/components/events/Event.tsx";
 
-function Events() {
+function Events({ showViewAllButton = false }: { showViewAllButton?: boolean }) {
     return (
 
         <section id="events" className="py-10 scroll-mt-20 bg-[#FFF3F8] relative overflow-hidden">
@@ -72,13 +72,14 @@ function Events() {
                 />
             </div>
 
+            {showViewAllButton && (
             <div className="flex justify-center mt-10">
                 <a href="/events" aria-label="View all events">
                     <button className="px-6 py-3 bg-[#FDA8C7] hover:bg-[#f98db4] text-white font-semibold rounded-sm shadow-md transition duration-300">
                         View All Events
                     </button>
                 </a>
-            </div>
+            </div>)}
         </section>
     );
 }

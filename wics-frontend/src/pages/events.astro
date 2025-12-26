@@ -8,9 +8,9 @@ import Events from "@/components/events/Events";
 import Upcoming from "@/components/events/Upcoming";
 ---
 
-<Layout>
-    <Navbar client:load />
-    <Upcoming client:load />
-    <Events client:load />
-    <Footer client:load />
-</Layout>
+    <Layout>
+        <Navbar client:load />
+        <Header client:load />
+        <Events client:load showViewAllButton={false} />
+        <Footer client:load />
+    </Layout>
