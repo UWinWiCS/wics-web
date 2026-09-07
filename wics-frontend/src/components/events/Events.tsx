@@ -61,14 +61,15 @@ function Events({ showViewAllButton = false, limit }: { showViewAllButton?: bool
     // Note: assuming that we maintain chronological order and paste newest events at the top of the array...
     // To display the two oldest events: .slice(-limit)
     // To display the two newest events: .slice(0, limit)
+    // As of right now, we're displaying our two oldest events because they have nice pictures associated with them!
     return (
         <section id="events" className="py-10 scroll-mt-20 bg-[#FFF3F8] relative overflow-hidden">
-            {/*Events title*/}
+            {/*Events Title*/}
             <div className="justify-center text-center mt-5 font-madimi">
                 <h1 className="lg:text-[4vw] text-[10vw] flex justify-center text-[#FDA8C7]">Recent Events</h1>
             </div>
 
-            {/*cards*/}
+            {/*Events Cards*/}
             <div className="flex flex-wrap justify-center gap-10 items-stretch w-full px-4 sm:px-0 mt-10">
                 {displayedEvents.map((event, index) => (
                     <Event key={index} {...event} />

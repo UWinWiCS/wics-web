@@ -18,7 +18,7 @@ function Upcoming() {
                     date="TBD"
                     time="TBD"
                     location="TBD"
-                    description="We'll see you in the new year for more fun events!"
+                    description="We're currently planning some fun events for you!"
                     className=""
                 />
             </div>

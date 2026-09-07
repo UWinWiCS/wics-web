@@ -7,6 +7,7 @@ import Navbar from "@/components/navbar/Navbar";
 import Mission from "@/components/homepage/Mission";
 import Events from "@/components/events/Events"
 import EventsButton from "@/components/events/EventsButton"
+import BinaryBeads from "@/components/homepage/BinaryBeads";
 ---
 
 <Layout>
@@ -15,5 +16,6 @@ import EventsButton from "@/components/events/EventsButton"
     <About client:load />
     <Mission client:load/>
     <Events client:load showViewAllButton={true} limit={2}/>
+    <BinaryBeads client:load/>
     <Footer client:load />
 </Layout>
