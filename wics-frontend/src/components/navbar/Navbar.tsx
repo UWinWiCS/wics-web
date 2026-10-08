@@ -45,6 +45,7 @@ function Navbar() {
                     <a href="/#about">About</a>
                     <a href="/#mission">Mission</a>
                     <a href="/events">Events</a>
+                    <a href="/binary-beads">Beads</a>
                     <a href="/store">Store</a>
                     <a
                         href="https://discord.gg/eMMbzfKxJc"
@@ -63,6 +64,7 @@ function Navbar() {
                         <a href="/#about" onClick={() => setIsOpen(false)}>About</a>
                         <a href="/#mission" onClick={() => setIsOpen(false)}>Mission</a>
                         <a href="/events" onClick={() => setIsOpen(false)}>Events</a>
+                        <a href="/binary-beads" onClick={() => setIsOpen(false)}>Beads</a>
                         <a href="/store" onClick={() => setIsOpen(false)}>Store</a>
                         <a
                             href="https://discord.gg/eMMbzfKxJc"

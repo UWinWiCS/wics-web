@@ -1,0 +1,12 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Navbar from "@/components/navbar/Navbar";
+import Footer from "@/components/footer/Footer";
+import BinaryBeadBuilder from "@/components/binarybeads/BinaryBeadBuilder";
+---
+
+<Layout>
+    <Navbar client:load />
+    <BinaryBeadBuilder client:load />
+    <Footer client:load />
+</Layout>
